@@ -119,6 +119,7 @@ button {
 
 .hero-list-link {
   font-weight: 600;
+  background-color: transparent;
   color: var(--text-secondary);
 }
 
@@ -274,5 +275,45 @@ button {
   line-height: 1.33;
   letter-spacing: -0.02em;
   text-transform: uppercase;
+  color: var(--text-primary);
+}
+
+.reviews-title {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 1.16;
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
+  text-align: center;
+  color: var(--text-primary);
+}
+
+.reviews-title > span {
+  color: var(--text-accent);
+}
+
+.reviews-list-item {
+  background-color: var(--bg-accent-secondary);
+}
+
+.reviews-list-item-subtitle {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.33;
+  text-align: center;
+  color: var(--text-primary);
+}
+
+.reviews-list-item-text {
+  line-height: 1.28;
+  letter-spacing: -0.02em;
+  text-align: center;
+  color: var(--text-quaternary);
+}
+
+.reviews-btn {
+  font-weight: 600;
+  font-size: 18px;
+  background-color: transparent;
   color: var(--text-primary);
 }
