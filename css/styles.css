@@ -4,6 +4,7 @@
   --bg-body: #fafafa;
   --bg-hero: rgba(17, 17, 17, 0.6);
   --bg-benefits: #1e1823;
+  --bg-price: #fafafa;
   --bg-accent-primary: #fd9222;
   --bg-accent-secondary: #ffffff;
   --bg-accent-tertiary: #1e1823;
@@ -136,7 +137,7 @@ button {
   background-color: var(--bg-benefits);
 }
 
-.benefits-list-title {
+.benefits-list-subtitle {
   font-weight: 600;
   font-size: 18px;
   letter-spacing: 0.01em;
@@ -176,17 +177,17 @@ button {
   background-color: var(--bg-accent-secondary);
 }
 
-.ingredients-list-item-title {
+.ingredients-list-item-subtitle {
   font-weight: 600;
   line-height: 1.28;
   letter-spacing: -0.02em;
   text-transform: uppercase;
 }
 
-.ingredients-list-item:nth-child(odd) .ingredients-list-item-title {
+.ingredients-list-item:nth-child(odd) .ingredients-list-item-subtitle {
   color: var(--text-secondary);
 }
-.ingredients-list-item:nth-child(even) .ingredients-list-item-title {
+.ingredients-list-item:nth-child(even) .ingredients-list-item-subtitle {
   color: var(--text-primary);
 }
 
@@ -204,7 +205,7 @@ button {
   color: var(--text-accent);
 }
 
-.workflow-caption {
+.workflow-subtitle {
   font-weight: 600;
   font-size: 18px;
   line-height: 1.33;
@@ -214,5 +215,41 @@ button {
 .workflow-list-item-text {
   line-height: 1.28;
   letter-spacing: -0.02em;
+  color: var(--text-primary);
+}
+
+.products-title {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 1.16;
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
+  text-align: center;
+  color: var(--text-primary);
+}
+
+.products-title > span {
+  color: var(--text-accent);
+}
+
+.products-list-item-subtitle {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.33;
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+  color: var(--text-primary);
+}
+
+.products-list-item-desc {
+  font-size: 12px;
+  line-height: 1.16667;
+  letter-spacing: -0.02em;
+  color: var(--text-quaternary);
+}
+
+.products-list-item-price {
+  background-color: var(--bg-price);
+  font-weight: 600;
   color: var(--text-primary);
 }
