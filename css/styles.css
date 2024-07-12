@@ -4,10 +4,12 @@
   --bg-body: #fafafa;
   --bg-hero: rgba(17, 17, 17, 0.6);
   --bg-benefits: #1e1823;
+  --bg-footer: #1e1823;
   --bg-price: #fafafa;
   --bg-accent-primary: #fd9222;
   --bg-accent-secondary: #ffffff;
   --bg-accent-tertiary: #1e1823;
+  --bg-accent-quaternary: #fcf1e0;
 
   --text-primary: #111111;
   --text-secondary: #ffffff;
@@ -117,10 +119,21 @@ button {
   font-weight: 600;
 }
 
+.hero-btn:hover,
+.hero-btn:focus {
+  background-color: var(--bg-accent-quaternary);
+  color: var(--text-accent);
+}
+
 .hero-list-link {
   font-weight: 600;
   background-color: transparent;
   color: var(--text-secondary);
+}
+
+.hero-list-link:hover,
+.hero-list-link:focus {
+  color: var(--text-accent);
 }
 
 .hero-list-link-scroll {
@@ -130,8 +143,20 @@ button {
   color: var(--text-secondary);
 }
 
+.hero-list-link-scroll:hover,
+.hero-list-link-scroll:focus {
+  color: var(--text-accent);
+}
+
 .hero-list-link-scroll-icon {
   background-color: var(--bg-accent-secondary);
+}
+
+.hero-list-link-scroll:hover > .hero-list-link-scroll-icon,
+.hero-list-link-scroll:focus > .hero-list-link-scroll-icon,
+.hero-list-link-scroll-icon:hover,
+.hero-list-link-scroll-icon:focus {
+  background-color: var(--bg-accent-primary);
 }
 
 .benefits {
@@ -316,4 +341,58 @@ button {
   font-size: 18px;
   background-color: transparent;
   color: var(--text-primary);
+}
+
+.reviews-btn:hover,
+.reviews-btn:focus {
+  background-color: var(--bg-accent-primary);
+  color: var(--text-secondary);
+}
+
+.footer {
+  background-color: var(--bg-footer);
+}
+
+.footer-title {
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 1.21;
+  letter-spacing: -0.02em;
+  color: var(--text-secondary);
+}
+
+.footer-title > span {
+  color: var(--text-accent);
+}
+
+.footer-socials-subtitle,
+.footer-feedback-subtitle {
+  font-weight: 500;
+  line-height: 1.28;
+  text-align: center;
+  color: var(--text-secondary);
+}
+
+.footer-feedback-list-item-link {
+  line-height: 1.28;
+  letter-spacing: -0.02em;
+  text-align: center;
+  color: var(--text-secondary);
+}
+
+.footer-feedback-list-item-link:hover,
+.footer-feedback-list-item-link:focus {
+  color: var(--text-accent);
+}
+
+.footer-nav-list-item-link {
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: -0.02em;
+  color: var(--text-secondary);
+}
+
+.footer-nav-list-item-link:hover,
+.footer-nav-list-item-link:focus {
+  color: var(--text-accent);
 }
