@@ -189,3 +189,30 @@ button {
 .ingredients-list-item:nth-child(even) .ingredients-list-item-title {
   color: var(--text-primary);
 }
+
+.workflow-title {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 1.16;
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
+  text-align: center;
+  color: var(--text-primary);
+}
+
+.workflow-title > span {
+  color: var(--text-accent);
+}
+
+.workflow-caption {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.33;
+  color: var(--text-primary);
+}
+
+.workflow-list-item-text {
+  line-height: 1.28;
+  letter-spacing: -0.02em;
+  color: var(--text-primary);
+}
