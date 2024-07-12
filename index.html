@@ -68,7 +68,7 @@
       <ul class="header-socials-list list">
         <li class="header-socials-list-item">
           <a
-            class="header-socials-link link"
+            class="header-socials-link"
             href="https://www.facebook.com"
             target="_blank"
           >
@@ -83,7 +83,7 @@
         </li>
         <li class="header-socials-list-item">
           <a
-            class="header-socials-link link"
+            class="header-socials-link"
             href="https://www.instagram.com"
             target="_blank"
           >
@@ -98,7 +98,7 @@
         </li>
         <li class="header-socials-list-item">
           <a
-            class="header-socials-link link"
+            class="header-socials-link"
             href="https://twitter.com"
             target="_blank"
           >
@@ -507,16 +507,21 @@
     </main>
 
     <!-- FOOTER -->
-    <footer>
-      <div>
-        <h2>Chocolate a delicious cure for a bad day</h2>
+    <footer class="footer">
+      <div class="footer-top">
+        <h2 class="footer-title">Chocolate a delicious cure for a bad day</h2>
         <!-- Social networks -->
-        <div>
-          <h3>Social networks</h3>
-          <ul>
-            <li>
-              <a href="https://www.instagram.com" target="_blank">
+        <div class="footer-socials">
+          <h3 class="footer-socials-subtitle">Social networks</h3>
+          <ul class="footer-socials-list list">
+            <li class="footer-socials-list-item">
+              <a
+                class="footer-socials-link"
+                href="https://www.instagram.com"
+                target="_blank"
+              >
                 <img
+                  class="footer-socials-icon"
                   src="./image/icons/instagram-transparent.svg"
                   alt="Instagram icon"
                   width="24"
@@ -524,9 +529,14 @@
                 />
               </a>
             </li>
-            <li>
-              <a href="https://www.facebook.com" target="_blank">
+            <li class="footer-socials-list-item">
+              <a
+                class="footer-socials-link"
+                href="https://www.facebook.com"
+                target="_blank"
+              >
                 <img
+                  class="footer-socials-icon"
                   src="./image/icons/facebook-transparent.svg"
                   alt="Facebook icon"
                   width="24"
@@ -534,9 +544,14 @@
                 />
               </a>
             </li>
-            <li>
-              <a href="https://twitter.com" target="_blank">
+            <li class="footer-socials-list-item">
+              <a
+                class="footer-socials-link"
+                href="https://twitter.com"
+                target="_blank"
+              >
                 <img
+                  class="footer-socials-icon"
                   src="./image/icons/twitter-transparent.svg"
                   alt="Twitter icon"
                   width="24"
@@ -547,24 +562,48 @@
           </ul>
         </div>
         <!-- Contact us -->
-        <div>
-          <h3>Contact us</h3>
+        <div class="footer-feedback">
+          <h3 class="footer-feedback-subtitle">Contact us</h3>
           <address>
-            <ul>
-              <li><a href="tel:+380684439426">+380 (68) 443-94-26</a></li>
-              <li>
-                <a href="mailto:simplychoc@gmail.com">simplychoc@gmail.com</a>
+            <ul class="footer-feedback-list list">
+              <li class="footer-feedback-list-item">
+                <a
+                  class="footer-feedback-list-item-link link"
+                  href="tel:+380684439426"
+                >
+                  +380 (68) 443-94-26
+                </a>
+              </li>
+              <li class="footer-feedback-list-item">
+                <a
+                  class="footer-feedback-list-item-link link"
+                  href="mailto:simplychoc@gmail.com"
+                >
+                  simplychoc@gmail.com
+                </a>
               </li>
             </ul>
           </address>
         </div>
       </div>
-      <div>
-        <nav>
-          <ul>
-            <li><a href="./index.html">Home</a></li>
-            <li><a href="#how-made">How it's made?</a></li>
-            <li><a href="#reviews">Chocolate is loved</a></li>
+      <div class="footer-bottom">
+        <nav class="footer-nav">
+          <ul class="footer-nav-list list">
+            <li class="footer-nav-list-item">
+              <a class="footer-nav-list-item-link link" href="./index.html">
+                Home
+              </a>
+            </li>
+            <li class="footer-nav-list-item">
+              <a class="footer-nav-list-item-link link" href="#how-made">
+                How it's made?
+              </a>
+            </li>
+            <li class="footer-nav-list-item">
+              <a class="footer-nav-list-item-link link" href="#reviews">
+                Chocolate is loved
+              </a>
+            </li>
           </ul>
         </nav>
       </div>
