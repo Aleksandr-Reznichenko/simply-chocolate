@@ -1,0 +1,191 @@
+:root {
+  --font-family: 'Montserrat', sans-serif;
+
+  --bg-body: #fafafa;
+  --bg-hero: rgba(17, 17, 17, 0.6);
+  --bg-benefits: #1e1823;
+  --bg-accent-primary: #fd9222;
+  --bg-accent-secondary: #ffffff;
+  --bg-accent-tertiary: #1e1823;
+
+  --text-primary: #111111;
+  --text-secondary: #ffffff;
+  --text-tertiary: rgba(255, 255, 255, 0.7);
+  --text-quaternary: rgba(17, 17, 17, 0.7);
+  --text-accent: #fd9222;
+
+  --border-primary: rgba(17, 17, 17, 0.1);
+  --border-accent: #fd9222;
+}
+
+/* Global styles */
+
+body {
+  background-color: var(--bg-body);
+  color: var(--text-primary);
+  font-family: var(--font-family);
+  font-size: 14px;
+  letter-spacing: -0.02em;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+/* ul,
+ol {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+} */
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.link {
+  text-decoration: none;
+}
+
+.list {
+  list-style-type: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+/* Local styles */
+
+.header-nav-logo {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.11;
+  letter-spacing: -0.03em;
+  color: var(--text-primary);
+}
+
+.header-nav-list-link {
+  font-weight: 500;
+  line-height: 1.14;
+  color: var(--text-primary);
+}
+
+.header-nav-list-link:hover,
+.header-nav-list-link:focus {
+  color: var(--text-accent);
+}
+
+.hero {
+  background-color: var(--bg-hero);
+}
+
+.hero-title {
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 1.21;
+  letter-spacing: -0.03em;
+  color: var(--text-secondary);
+}
+
+.hero-btn {
+  background-color: var(--bg-accent-primary);
+  color: var(--text-secondary);
+  font-weight: 600;
+}
+
+.hero-list-link {
+  font-weight: 600;
+  color: var(--text-secondary);
+}
+
+.hero-list-link-scroll {
+  font-weight: 500;
+  line-height: 1.28;
+  letter-spacing: -0.03em;
+  color: var(--text-secondary);
+}
+
+.hero-list-link-scroll-icon {
+  background-color: var(--bg-accent-secondary);
+}
+
+.benefits {
+  background-color: var(--bg-benefits);
+}
+
+.benefits-list-title {
+  font-weight: 600;
+  font-size: 18px;
+  letter-spacing: 0.01em;
+  color: var(--text-secondary);
+}
+
+.benefits-list-text {
+  line-height: 1.28;
+  letter-spacing: -0.02em;
+  color: var(--text-tertiary);
+}
+
+.ingredients-title {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 1.16;
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
+  text-align: center;
+  color: var(--text-primary);
+}
+
+.ingredients-title > span {
+  color: var(--text-accent);
+}
+
+.ingredients-list-item:nth-child(4n + 1) {
+  background-color: var(--bg-accent-primary);
+}
+.ingredients-list-item:nth-child(4n + 2) {
+  background-color: var(--bg-accent-secondary);
+}
+.ingredients-list-item:nth-child(4n + 3) {
+  background-color: var(--bg-accent-tertiary);
+}
+.ingredients-list-item:nth-child(4n + 4) {
+  background-color: var(--bg-accent-secondary);
+}
+
+.ingredients-list-item-title {
+  font-weight: 600;
+  line-height: 1.28;
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+}
+
+.ingredients-list-item:nth-child(odd) .ingredients-list-item-title {
+  color: var(--text-secondary);
+}
+.ingredients-list-item:nth-child(even) .ingredients-list-item-title {
+  color: var(--text-primary);
+}
