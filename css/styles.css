@@ -160,10 +160,6 @@ button {
 
 /* HERO */
 
-.hero {
-  margin-bottom: 20px;
-}
-
 .hero-container {
   background-color: var(--bg-hero);
   border-radius: 30px;
@@ -260,6 +256,18 @@ button {
 
 .benefits {
   background-color: var(--bg-benefits);
+  margin-top: 80px;
+  margin-bottom: 60px;
+}
+
+.benefits-list {
+  display: flex;
+  column-gap: 88px;
+  padding: 50px 18px;
+}
+
+.benefits-list-item {
+  width: calc((100% - 176px) / 3);
 }
 
 .benefits-list-subtitle {
@@ -267,6 +275,7 @@ button {
   font-size: 18px;
   letter-spacing: 0.01em;
   color: var(--text-secondary);
+  margin-bottom: 18px;
 }
 
 .benefits-list-text {
@@ -274,6 +283,8 @@ button {
   letter-spacing: -0.02em;
   color: var(--text-tertiary);
 }
+
+/* INGREDIENTS */
 
 .ingredients-title {
   font-weight: 600;
