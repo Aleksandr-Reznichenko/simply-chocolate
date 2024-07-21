@@ -19,6 +19,7 @@
 
   --border-primary: rgba(17, 17, 17, 0.1);
   --border-secondary: rgba(253, 146, 34, 0.1);
+  --border-tertiary: #ffffff;
   --border-accent: #fd9222;
 }
 
@@ -91,6 +92,8 @@ button {
 
 /* Local styles */
 
+/* HEADER */
+
 .header-container {
   display: flex;
   justify-content: space-between;
@@ -155,8 +158,16 @@ button {
   border-color: var(--border-secondary);
 }
 
+/* HERO */
+
 .hero {
+  margin-bottom: 20px;
+}
+
+.hero-container {
   background-color: var(--bg-hero);
+  border-radius: 30px;
+  padding: 366px 40px 40px 40px;
 }
 
 .hero-title {
@@ -165,53 +176,87 @@ button {
   line-height: 1.21;
   letter-spacing: -0.03em;
   color: var(--text-secondary);
+
+  width: 484px;
+  margin-bottom: 32px;
 }
 
-.hero-btn {
+.hero-actions {
+  display: flex;
+  gap: 14px;
+}
+
+.hero-actions-btn {
   background-color: var(--bg-accent-primary);
   color: var(--text-secondary);
   font-weight: 600;
+
+  padding: 14px 40px;
+  border: 0;
+  border-radius: 50px;
 }
 
-.hero-btn:hover,
-.hero-btn:focus {
+.hero-actions-btn:hover,
+.hero-actions-btn:focus {
   background-color: var(--bg-accent-quaternary);
   color: var(--text-accent);
 }
 
-.hero-list-link {
+.hero-actions-list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-grow: 1;
+}
+
+.hero-actions-list-link {
   font-weight: 600;
   background-color: transparent;
   color: var(--text-secondary);
+
+  padding: 14px 40px;
+  border-radius: 50px;
+  border: 1px solid var(--border-tertiary);
 }
 
-.hero-list-link:hover,
-.hero-list-link:focus {
+.hero-actions-list-link:hover,
+.hero-actions-list-link:focus {
   color: var(--text-accent);
+  border-color: var(--border-accent);
 }
 
-.hero-list-link-scroll {
+.hero-actions-list-link-scroll {
   font-weight: 500;
   line-height: 1.28;
   letter-spacing: -0.03em;
   color: var(--text-secondary);
+
+  display: flex;
+  align-items: center;
+  gap: 14px;
 }
 
-.hero-list-link-scroll:hover,
-.hero-list-link-scroll:focus {
+.hero-actions-list-link-scroll:hover,
+.hero-actions-list-link-scroll:focus {
   color: var(--text-accent);
 }
 
-.hero-list-link-scroll-icon {
+.hero-actions-list-link-scroll-icon {
   background-color: var(--bg-accent-secondary);
+  border-radius: 50px;
+  width: 38px;
+  height: 38px;
+  padding: 8px;
 }
 
-.hero-list-link-scroll:hover > .hero-list-link-scroll-icon,
-.hero-list-link-scroll:focus > .hero-list-link-scroll-icon,
-.hero-list-link-scroll-icon:hover,
-.hero-list-link-scroll-icon:focus {
+.hero-actions-list-link-scroll:hover > .hero-actions-list-link-scroll-icon,
+.hero-actions-list-link-scroll:focus > .hero-actions-list-link-scroll-icon,
+.hero-actions-list-link-scroll-icon:hover,
+.hero-actions-list-link-scroll-icon:focus {
   background-color: var(--bg-accent-primary);
 }
+
+/* BENEFITS */
 
 .benefits {
   background-color: var(--bg-benefits);
