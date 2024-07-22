@@ -286,6 +286,11 @@ button {
 
 /* INGREDIENTS */
 
+.ingredients {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
 .ingredients-title {
   font-weight: 600;
   font-size: 24px;
@@ -294,10 +299,25 @@ button {
   text-transform: uppercase;
   text-align: center;
   color: var(--text-primary);
+
+  margin-bottom: 50px;
 }
 
 .ingredients-title > span {
   color: var(--text-accent);
+}
+
+.ingredients-list {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 32px;
+  row-gap: 24px;
+}
+
+.ingredients-list-item {
+  border-radius: 15px;
+  padding: 28px 23px;
+  width: calc((100% - 96px) / 4);
 }
 
 .ingredients-list-item:nth-child(4n + 1) {
@@ -305,12 +325,18 @@ button {
 }
 .ingredients-list-item:nth-child(4n + 2) {
   background-color: var(--bg-accent-secondary);
+  border: 1px solid var(--border-accent);
 }
 .ingredients-list-item:nth-child(4n + 3) {
   background-color: var(--bg-accent-tertiary);
 }
 .ingredients-list-item:nth-child(4n + 4) {
   background-color: var(--bg-accent-secondary);
+  border: 1px solid var(--border-accent);
+}
+
+.ingredients-list-item-img {
+  margin-bottom: 36px;
 }
 
 .ingredients-list-item-subtitle {
@@ -318,6 +344,7 @@ button {
   line-height: 1.28;
   letter-spacing: -0.02em;
   text-transform: uppercase;
+  font-size: 14px;
 }
 
 .ingredients-list-item:nth-child(odd) .ingredients-list-item-subtitle {
@@ -326,6 +353,8 @@ button {
 .ingredients-list-item:nth-child(even) .ingredients-list-item-subtitle {
   color: var(--text-primary);
 }
+
+/* WORKFLOW */
 
 .workflow-title {
   font-weight: 600;
