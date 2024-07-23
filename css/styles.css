@@ -534,7 +534,7 @@ button {
 
 .reviews {
   padding-top: 60px;
-  padding-bottom: 60px;
+  padding-bottom: 120px;
 }
 
 .reviews-title {
@@ -606,36 +606,77 @@ button {
   background-color: var(--bg-footer);
 }
 
+/* Footer top */
+
+.footer-top {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
 .footer-title {
   font-weight: 500;
   font-size: 28px;
   line-height: 1.21;
   letter-spacing: -0.02em;
   color: var(--text-secondary);
+  width: 300px;
 }
 
 .footer-title > span {
   color: var(--text-accent);
 }
 
-.footer-socials-subtitle,
-.footer-feedback-subtitle {
-  font-weight: 500;
-  line-height: 1.28;
-  text-align: center;
-  color: var(--text-secondary);
+.footer-contacts {
+  display: flex;
+  column-gap: 50px;
 }
 
-.footer-feedback-list-item-link {
+.footer-contacts-socials-subtitle,
+.footer-contacts-feedback-subtitle {
+  font-weight: 500;
+  line-height: 1.28;
+  color: var(--text-secondary);
+  margin-bottom: 14px;
+  font-size: inherit;
+}
+
+.footer-contacts-socials-list {
+  display: flex;
+  column-gap: 14px;
+}
+
+.footer-contacts-feedback-list {
+  font-style: normal;
+}
+
+.footer-contacts-feedback-list-item-link {
   line-height: 1.28;
   letter-spacing: -0.02em;
   text-align: center;
   color: var(--text-secondary);
 }
 
-.footer-feedback-list-item-link:hover,
-.footer-feedback-list-item-link:focus {
+.footer-contacts-feedback-list-item-link:hover,
+.footer-contacts-feedback-list-item-link:focus {
   color: var(--text-accent);
+}
+
+/* Footer bottom */
+
+.footer-bottom {
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.footer-nav {
+  padding-top: 24px;
+  padding-bottom: 86px;
+}
+
+.footer-nav-list {
+  display: flex;
+  column-gap: 24px;
 }
 
 .footer-nav-list-item-link {
