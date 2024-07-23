@@ -489,6 +489,11 @@ button {
 
 /* SELLERS */
 
+.sellers {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
 .sellers-title {
   font-weight: 600;
   font-size: 24px;
@@ -497,10 +502,17 @@ button {
   text-transform: uppercase;
   text-align: center;
   color: var(--text-primary);
+  margin-bottom: 50px;
 }
 
 .sellers-title > span {
   color: var(--text-accent);
+}
+
+.sellers-list {
+  display: flex;
+  column-gap: 16px;
+  text-align: center;
 }
 
 .sellers-list-item-subtitle {
@@ -510,7 +522,15 @@ button {
   letter-spacing: -0.02em;
   text-transform: uppercase;
   color: var(--text-primary);
+  padding: 28px 0;
+  border-radius: 0px 0px 15px 15px;
+  border-right: 1px solid var(--border-primary);
+  border-bottom: 1px solid var(--border-primary);
+  border-left: 1px solid var(--border-primary);
+  background-color: var(--bg-accent-secondary);
 }
+
+/* REVIEWS */
 
 .reviews-title {
   font-weight: 600;
