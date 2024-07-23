@@ -21,6 +21,8 @@
   --border-secondary: rgba(253, 146, 34, 0.1);
   --border-tertiary: #ffffff;
   --border-accent: #fd9222;
+
+  --marker: #4c4c4c;
 }
 
 /* Global styles */
@@ -354,7 +356,12 @@ button {
   color: var(--text-primary);
 }
 
-/* WORKFLOW */
+/* HOW IT'S MADE (WORKFLOW) */
+
+.workflow {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
 
 .workflow-title {
   font-weight: 600;
@@ -364,24 +371,49 @@ button {
   text-transform: uppercase;
   text-align: center;
   color: var(--text-primary);
+  margin-bottom: 50px;
 }
 
 .workflow-title > span {
   color: var(--text-accent);
 }
 
-.workflow-subtitle {
+.workflow-box {
+  display: flex;
+  column-gap: 20px;
+}
+
+.workflow-box-instructions {
+  background-color: var(--bg-accent-secondary);
+  border-radius: 15px;
+  padding: 32px;
+}
+
+.workflow-box-instructions-subtitle {
   font-weight: 600;
   font-size: 18px;
   line-height: 1.33;
   color: var(--text-primary);
+  margin-bottom: 28px;
 }
 
-.workflow-list-item-text {
+.workflow-box-instructions-list {
+  display: flex;
+  flex-direction: column;
+  row-gap: 24px;
+  list-style-type: disc;
+  color: var(--marker);
+  padding-left: 16px;
+  width: 442px;
+}
+
+.workflow-box-instructions-list-item-text {
   line-height: 1.28;
   letter-spacing: -0.02em;
   color: var(--text-primary);
 }
+
+/* PRODUCTS */
 
 .products-title {
   font-weight: 600;
