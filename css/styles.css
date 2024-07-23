@@ -532,6 +532,11 @@ button {
 
 /* REVIEWS */
 
+.reviews {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
 .reviews-title {
   font-weight: 600;
   font-size: 24px;
@@ -540,28 +545,39 @@ button {
   text-transform: uppercase;
   text-align: center;
   color: var(--text-primary);
+  margin-bottom: 50px;
 }
 
 .reviews-title > span {
   color: var(--text-accent);
 }
 
+.reviews-list {
+  display: flex;
+  column-gap: 28px;
+  margin-bottom: 50px;
+}
+
 .reviews-list-item {
+  padding: 56px 24px 24px 24px;
   background-color: var(--bg-accent-secondary);
+  text-align: center;
+  border-radius: 15px;
+  border: 1px solid var(--border-primary);
+  box-shadow: 0px 9.049px 100px 0px rgba(17, 17, 17, 0.03);
 }
 
 .reviews-list-item-subtitle {
   font-weight: 600;
   font-size: 18px;
   line-height: 1.33;
-  text-align: center;
   color: var(--text-primary);
+  margin-bottom: 24px;
 }
 
 .reviews-list-item-text {
   line-height: 1.28;
   letter-spacing: -0.02em;
-  text-align: center;
   color: var(--text-quaternary);
 }
 
@@ -570,6 +586,12 @@ button {
   font-size: 18px;
   background-color: transparent;
   color: var(--text-primary);
+  padding: 14px 40px;
+  border-radius: 50px;
+  border: 1px solid var(--border-accent);
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .reviews-btn:hover,
@@ -577,6 +599,8 @@ button {
   background-color: var(--bg-accent-primary);
   color: var(--text-secondary);
 }
+
+/* FOOTER */
 
 .footer {
   background-color: var(--bg-footer);
