@@ -298,12 +298,34 @@ button {
 }
 
 .benefits-list-item {
+  position: relative;
   width: calc((100% - 176px) / 3);
+}
+
+.benefits-list-item:not(:last-child)::after {
+  content: '';
+  width: 1px;
+  height: 124px;
+  background: rgba(255, 255, 255, 0.5);
+  position: absolute;
+  top: 50%;
+  right: -43.5px;
+  transform: translateY(-50%);
+}
+
+.benefits-list-icon-wrapper {
+  width: 62px;
+  height: 62px;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 22px;
 }
 
 .benefits-list-icon {
   fill: var(--bg-accent-primary);
-  margin-bottom: 22px;
 }
 
 .benefits-list-subtitle {
