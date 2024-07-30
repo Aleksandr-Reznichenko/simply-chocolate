@@ -125,6 +125,8 @@ button {
 
 .header-nav-logo-icon {
   margin-left: 4px;
+  fill: var(--bg-accent-quaternary);
+  stroke: var(--bg-accent-primary);
 }
 
 .header-nav-list {
@@ -245,6 +247,7 @@ button {
   width: 38px;
   height: 38px;
   padding: 8px;
+  fill: var(--bg-accent-primary);
 }
 
 .hero-actions-list-link-scroll:hover > .hero-actions-list-link-scroll-icon,
@@ -252,6 +255,7 @@ button {
 .hero-actions-list-link-scroll-icon:hover,
 .hero-actions-list-link-scroll-icon:focus {
   background-color: var(--bg-accent-primary);
+  fill: var(--bg-accent-secondary);
 }
 
 /* BENEFITS */
@@ -270,6 +274,11 @@ button {
 
 .benefits-list-item {
   width: calc((100% - 176px) / 3);
+}
+
+.benefits-list-icon {
+  fill: var(--bg-accent-primary);
+  margin-bottom: 22px;
 }
 
 .benefits-list-subtitle {
