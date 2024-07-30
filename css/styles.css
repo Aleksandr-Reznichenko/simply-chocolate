@@ -23,6 +23,8 @@
   --border-accent: #fd9222;
 
   --marker: #4c4c4c;
+  --icon-fill-accent: #fd9222;
+  --icon-fill-black: #111111;
 }
 
 /* Global styles */
@@ -139,6 +141,7 @@ button {
   font-weight: 500;
   line-height: 1.14;
   color: var(--text-primary);
+  transition: color 250ms ease-in;
 }
 
 .header-nav-list-link:hover,
@@ -151,15 +154,29 @@ button {
   gap: 14px;
 }
 
-.header-socials-list-item {
+.header-socials-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   padding: 8px;
   border-radius: 10px;
   border: 1px solid var(--border-primary);
+  transition: border-color 250ms ease-in;
 }
 
-.header-socials-list-item:hover,
-.header-socials-list-item:focus {
+.header-socials-link:hover,
+.header-socials-link:focus {
   border-color: var(--border-secondary);
+}
+
+.header-socials-icon {
+  fill: var(--icon-fill-black);
+  transition: fill 250ms ease-in;
+}
+
+.header-socials-link:hover .header-socials-icon,
+.header-socials-link:focus .header-socials-icon {
+  fill: var(--icon-fill-accent);
 }
 
 /* HERO */
@@ -167,7 +184,14 @@ button {
 .hero-container {
   background-color: var(--bg-hero);
   border-radius: 30px;
-  padding: 366px 40px 40px 40px;
+  padding: 381px 40px 40px 40px;
+  background-image: linear-gradient(
+      rgba(17, 17, 17, 0.4),
+      rgba(17, 17, 17, 0.4)
+    ),
+    url(../image/hero/bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .hero-title {
@@ -190,10 +214,10 @@ button {
   background-color: var(--bg-accent-primary);
   color: var(--text-secondary);
   font-weight: 600;
-
   padding: 14px 40px;
   border: 0;
   border-radius: 50px;
+  transition: background-color 250ms ease-in, color 250ms ease-in;
 }
 
 .hero-actions-btn:hover,
@@ -213,10 +237,10 @@ button {
   font-weight: 600;
   background-color: transparent;
   color: var(--text-secondary);
-
   padding: 14px 40px;
   border-radius: 50px;
   border: 1px solid var(--border-tertiary);
+  transition: color 250ms ease-in, border-color 250ms ease-in;
 }
 
 .hero-actions-list-link:hover,
@@ -230,10 +254,10 @@ button {
   line-height: 1.28;
   letter-spacing: -0.03em;
   color: var(--text-secondary);
-
   display: flex;
   align-items: center;
   gap: 14px;
+  transition: color 250ms ease-in;
 }
 
 .hero-actions-list-link-scroll:hover,
@@ -248,6 +272,7 @@ button {
   height: 38px;
   padding: 8px;
   fill: var(--bg-accent-primary);
+  transition: background-color 250ms ease-in, fill 250ms ease-in;
 }
 
 .hero-actions-list-link-scroll:hover > .hero-actions-list-link-scroll-icon,
