@@ -376,6 +376,25 @@ button {
   border-radius: 15px;
   padding: 28px 23px;
   width: calc((100% - 96px) / 4);
+  position: relative;
+}
+
+.ingredients-list-item-icon {
+  position: absolute;
+  top: 14px;
+  right: 14px;
+  fill: transparent;
+  stroke: var(--bg-accent-secondary);
+  transition: transform 250ms ease-in;
+}
+
+.ingredients-list-item-icon:hover,
+.ingredients-list-item-icon:focus {
+  transform: scale(1.1) rotate(-45deg);
+}
+
+.ingredients-list-item:nth-child(even) .ingredients-list-item-icon {
+  stroke: var(--bg-accent-primary);
 }
 
 .ingredients-list-item:nth-child(4n + 1) {
