@@ -757,6 +757,8 @@ button {
   column-gap: 50px;
 }
 
+/* Social networks */
+
 .footer-contacts-socials-subtitle,
 .footer-contacts-feedback-subtitle {
   font-weight: 500;
@@ -771,6 +773,33 @@ button {
   column-gap: 14px;
 }
 
+.footer-contacts-socials-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 8px;
+  transition: border-color 250ms ease-in;
+}
+
+.footer-contacts-socials-link:hover,
+.footer-contacts-socials-link:focus {
+  border-color: var(--border-secondary);
+}
+
+.footer-contacts-socials-icon {
+  stroke: var(--bg-accent-secondary);
+  transition: stroke 250ms ease-in;
+}
+
+.footer-contacts-socials-link:hover .footer-contacts-socials-icon,
+.footer-contacts-socials-link:focus .footer-contacts-socials-icon {
+  stroke: var(--bg-accent-primary);
+}
+
+/* Contact us */
+
 .footer-contacts-feedback-list {
   font-style: normal;
 }
@@ -780,6 +809,7 @@ button {
   letter-spacing: -0.02em;
   text-align: center;
   color: var(--text-secondary);
+  transition: color 250ms ease-in;
 }
 
 .footer-contacts-feedback-list-item-link:hover,
@@ -808,6 +838,7 @@ button {
   line-height: 1.14;
   letter-spacing: -0.02em;
   color: var(--text-secondary);
+  transition: color 250ms ease-in;
 }
 
 .footer-nav-list-item-link:hover,
